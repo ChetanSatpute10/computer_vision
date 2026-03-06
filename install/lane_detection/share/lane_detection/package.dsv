@@ -1,6 +1,0 @@
-source;share/lane_detection/hook/pythonpath.ps1
-source;share/lane_detection/hook/pythonpath.dsv
-source;share/lane_detection/hook/pythonpath.sh
-source;share/lane_detection/hook/ament_prefix_path.ps1
-source;share/lane_detection/hook/ament_prefix_path.dsv
-source;share/lane_detection/hook/ament_prefix_path.sh

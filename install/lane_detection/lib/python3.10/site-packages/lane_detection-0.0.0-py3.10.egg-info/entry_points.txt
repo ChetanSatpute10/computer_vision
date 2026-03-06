@@ -1,5 +1,0 @@
-[console_scripts]
-lane_detection_node = lane_detection.lane_detection_node:main
-multi_view_visualizer = lane_detection.multi_view_visualizer:main
-pointcloud_processor = lane_detection.pointcloud_processor:main
-
