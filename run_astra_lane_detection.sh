@@ -11,19 +11,15 @@ else
     echo "⚠ Video group not active in current session"
     echo "Using 'sg video' to run with video permissions..."
     echo ""
-    # Re-run this script with video group permissions
-    exec sg video "$0"
+    # Re-run this script with video group permissions, preserving DISPLAY
+    exec sg video "DISPLAY=$DISPLAY $0"
 fi
 
 # Source ROS2 installation
 source /opt/ros/humble/setup.bash
 
 # Source workspace overlays
-<<<<<<< HEAD
-source ~/depth_cam/install/setup.bash
-=======
 source ~/lane_following/install/setup.bash
->>>>>>> f3c6d1fd (okay :<)
 
 # Check if camera is connected
 echo ""
@@ -58,17 +54,13 @@ echo "================================================"
 echo ""
 
 # Make the Python script executable
-<<<<<<< HEAD
-chmod +x ~/depth_cam/src/Lane-Detection/LaneDetect_AstraCam.py
-
-# Run the lane detection node
-cd ~/depth_cam/src/Lane-Detection
-=======
 chmod +x ~/lane_following/src/lane_detection/LaneDetect_AstraCam.py
 
-# Run the lane detection node
+# Run the lane detection node (source ROS env in same shell so rclpy resolves)
 cd ~/lane_following/src/lane_detection
->>>>>>> f3c6d1fd (okay :<)
+source /opt/ros/humble/setup.bash
+source ~/lane_following/install/setup.bash
+export DISPLAY=${DISPLAY:-:1}
 python3 LaneDetect_AstraCam.py
 
 # Cleanup: kill camera node when done
