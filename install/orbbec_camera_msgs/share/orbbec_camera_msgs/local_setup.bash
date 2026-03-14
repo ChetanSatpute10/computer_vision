@@ -1,1 +1,0 @@
-/home/chetan-satpute/lane_following/build/orbbec_camera_msgs/ament_cmake_environment_hooks/local_setup.bash

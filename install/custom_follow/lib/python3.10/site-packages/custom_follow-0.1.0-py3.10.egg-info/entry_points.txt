@@ -1,4 +1,0 @@
-[console_scripts]
-esp32_bridge = custom_follow.esp32_bridge:main
-infer_node = custom_follow.infer_node:main
-

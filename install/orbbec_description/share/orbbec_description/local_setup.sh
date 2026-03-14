@@ -1,1 +1,0 @@
-/home/chetan-satpute/lane_following/build/orbbec_description/ament_cmake_environment_hooks/local_setup.sh

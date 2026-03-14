@@ -1,1 +1,0 @@
-/home/chetan-satpute/lane_following/build/orbbec_camera_msgs/rosidl_generator_c/orbbec_camera_msgs/msg/detail/extrinsics__type_support.h

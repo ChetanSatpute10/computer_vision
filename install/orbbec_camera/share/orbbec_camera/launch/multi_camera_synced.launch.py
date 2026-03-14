@@ -1,1 +1,0 @@
-/home/chetan-satpute/lane_following/src/OrbbecSDK_ROS2/orbbec_camera/launch/multi_camera_synced.launch.py
